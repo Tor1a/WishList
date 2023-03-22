@@ -1,9 +1,9 @@
-package com.example.restarunt.naver;
+package com.example.restaurant.naver;
 
-import com.example.restarunt.naver.dto.SearchImageReq;
-import com.example.restarunt.naver.dto.SearchImageRes;
-import com.example.restarunt.naver.dto.SearchLocalReq;
-import com.example.restarunt.naver.dto.SearchLocalRes;
+import com.example.restaurant.naver.dto.SearchImageReq;
+import com.example.restaurant.naver.dto.SearchImageRes;
+import com.example.restaurant.naver.dto.SearchLocalReq;
+import com.example.restaurant.naver.dto.SearchLocalRes;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;
@@ -13,11 +13,12 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
-
 @Component
 public class NaverClient {
+
     @Value("${naver.client.id}")
     private String naverClientId;
+
     @Value("${naver.client.secret}")
     private String naverClientSecret;
 
@@ -79,4 +80,5 @@ public class NaverClient {
 
         return responseEntity.getBody();
     }
+
 }

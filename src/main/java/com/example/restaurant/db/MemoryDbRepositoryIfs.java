@@ -1,4 +1,4 @@
-package com.example.restarunt.db;
+package com.example.restaurant.db;
 
 import java.util.List;
 import java.util.Optional;

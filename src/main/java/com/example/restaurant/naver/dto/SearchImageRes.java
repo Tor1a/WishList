@@ -1,4 +1,4 @@
-package com.example.restarunt.naver.dto;
+package com.example.restaurant.naver.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,8 +7,8 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class SearchImageRes {
 
     private String lastBuildDate;
@@ -17,16 +17,16 @@ public class SearchImageRes {
     private int display;
     private List<SearchImageItem> items;
 
+
+
     @Data
-    @AllArgsConstructor
     @NoArgsConstructor
-    public static class SearchImageItem{
+    @AllArgsConstructor
+    public static class SearchImageItem {
         private String title;
         private String link;
         private String thumbnail;
         private String sizeheight;
         private String sizewidth;
-
-
     }
 }
